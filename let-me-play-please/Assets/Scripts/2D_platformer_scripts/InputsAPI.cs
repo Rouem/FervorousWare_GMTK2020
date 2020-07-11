@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class InputsAPI : MonoBehaviour
 {
+    public static InputsAPI instance;
+    private void Awake()
+    {
+        if (InputsAPI.instance != null)
+        {
+            Destroy(gameObject);
+        }
+        instance = this;
+    }
+
     //walk
     private float right_input = 0f;
     private float left_input = 0f;
@@ -22,6 +32,8 @@ public class InputsAPI : MonoBehaviour
     //--bools
     private bool is_shooting_forward_enabled = true;
     private bool is_shooting_up_enabled = true;
+
+    
 
     private void Update()
     {
