@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class InputsAPI : MonoBehaviour
 {
-    public static InputsAPI instance;
-    private void Awake()
-    {
-        if (InputsAPI.instance != null)
-        {
-            Destroy(gameObject);
-        }
-        instance = this;
-    }
 
     //walk
     private float right_input = 0f;
@@ -33,17 +24,20 @@ public class InputsAPI : MonoBehaviour
     private bool is_shooting_forward_enabled = true;
     private bool is_shooting_up_enabled = true;
 
+
     
 
     private void Update()
     {
-        if(right_input_enabled)
+        if(VideoGameController.instance.GetControllState())return;
+        
+        if(VideoGameController.instance.GetRIGHT())
             right_input = Input.GetAxis("Horizontal_right");
         
-        if(left_input_enabled)
+        if(VideoGameController.instance.GetLEFT())
             left_input = Input.GetAxis("Horizontal_left");
         
-        if(is_jumping_enabled)
+        if(VideoGameController.instance.GetJUMP())
             is_jumping = Input.GetAxis("Jump")>=1;
         
         if(is_shooting_forward_enabled)
@@ -75,7 +69,7 @@ public class InputsAPI : MonoBehaviour
     }
 
     //ENABLER/DISABLE API
-    public void set_right(bool is_enabled)
+    /* public void set_right(bool is_enabled)
     {
         right_input_enabled = is_enabled;
     }
@@ -88,7 +82,7 @@ public class InputsAPI : MonoBehaviour
     public void set_jump(bool is_enabled)
     {
         is_jumping_enabled = is_enabled;
-    }
+    } */
 
     public void set_shoot_up(bool is_enabled)
     {
