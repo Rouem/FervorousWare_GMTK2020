@@ -1,0 +1,1 @@
+Aqui ficam os efeitos visuais, como explosões, raios, golpes de espada, etc.
