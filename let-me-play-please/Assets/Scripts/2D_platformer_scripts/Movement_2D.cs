@@ -14,7 +14,7 @@ public class Movement_2D : MonoBehaviour
     //state variables
     private float walk_direction = 0;
     //attributes
-    private float walk_speed = 60f;
+    [SerializeField] private float walk_speed = 50f;
     private bool is_jumping = false;
 
     private void Start()
@@ -27,7 +27,6 @@ public class Movement_2D : MonoBehaviour
     {
         walk_direction = inputs.WalkDirection();
         is_jumping = inputs.IsJumping();
-       
     }
 
     private void FixedUpdate()
