@@ -10,9 +10,14 @@ public class GunScript : MonoBehaviour
     //state variables
     private bool is_shooting_forward = false;
     private bool is_shooting_up = false;
-    public Vector2 shoot_direction = Vector2.right;
+    //stats constants
+    [SerializeField] private float shoot_bpm = 365f;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        InvokeRepeating("SpawnBulletRate", 0f, 60/shoot_bpm);    
+    }
+
     void Update()
     {
         //inputs
@@ -31,7 +36,7 @@ public class GunScript : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void SpawnBulletRate()
     {
         if (is_shooting_up || is_shooting_forward)
         {
