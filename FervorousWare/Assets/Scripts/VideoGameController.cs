@@ -5,76 +5,62 @@ using UnityEngine;
 public class VideoGameController : MonoBehaviour
 {
     
-    bool[] activedButton = new bool[6];
-    bool controllState = true;
+    bool up,down,left,right,fire,jump;
     public Camera cam;
-
-    public Material lightOn, lightOff;
-    public MeshRenderer lightState;
 
     #region INPUTS
     public bool GetUP(){
-        return activedButton[0];
+        return up;
     }
     
     public bool GetDOWN(){
-        return activedButton[1];
+        return down;
     }
 
     public bool GetLEFT(){
-        return activedButton[2];
+        return left;
     }
 
     public bool GetRIGHT(){
-        return activedButton[3];
+        return right;
     }
 
     public bool GetFIRE(){
-        return activedButton[4];
+        return fire;
     }
 
     public bool GetJUMP(){
-        return activedButton[5];
+        return jump;
     }
 
     
     public void SetUP(bool state){
-        activedButton[0] = state;
+        up = state;
     }
     
     public void SetDOWN(bool state){
-        activedButton[1] = state;
+        down = state;
     }
     
     public void SetLEFT(bool state){
-        activedButton[2] = state;
+        left = state;
     }
 
     public void SetRIGHT(bool state){
-        activedButton[3] = state;
+        right = state;
     }
 
     public void SetFIRE(bool state){
-        activedButton[4] = state;
+        fire = state;
     }
 
     public void SetJUMP(bool state){
-        activedButton[5] = state;
+        jump = state;
     }
     #endregion
 
     public ControllInputs[] buttons;
     
-    public void ReloadGame(){
-        Start();
-    }
-
-    void Start() {
-        ReconectControll();
-        for(int i = 0; i < activedButton.Length;i++)
-            activedButton[i] = true;
-    }
-  
     private void Update() {
         if(Input.GetMouseButtonDown(0)){
     	   	Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -94,32 +80,13 @@ public class VideoGameController : MonoBehaviour
         if(sort.Equals(lastSorted)){
             if(sort.Equals(lastSorted))
                 sort++;
-                
             if(sort > buttons.Length-1)
                 sort = 0;
             else
                 sort++;
         }
-        int numberOfPress = Random.Range(2,9);
-        Debug.Log("Button "+buttons[sort].name+" isn't working!");
-        buttons[sort].NumberOfPress(numberOfPress);
-        activedButton[sort] = false;
+        Debug.Log(sort+" Button: "+buttons[sort].name);
         lastSorted = sort;
-    }
-
-    public bool GetControllState(){
-        return controllState;
-    }
-
-    public void CrashControll(){
-        lightState.material = lightOff;
-        controllState = false;
-    }
-
-    
-    public void ReconectControll(){
-        lightState.material = lightOn;
-        controllState = true;
     }
 
 }
