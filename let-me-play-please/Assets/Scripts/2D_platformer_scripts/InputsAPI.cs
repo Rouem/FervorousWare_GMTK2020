@@ -29,7 +29,7 @@ public class InputsAPI : MonoBehaviour
 
     private void Update()
     {
-        if(VideoGameController.instance.GetControllState())return;
+        if(!VideoGameController.instance.GetControllState())return;
         
         if(VideoGameController.instance.GetRIGHT())
             right_input = Input.GetAxis("Horizontal_right");

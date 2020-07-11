@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\ControllInputs.cs" />
      <Compile Include="Assets\Scripts\EnableControll.cs" />
      <Compile Include="Assets\Scripts\VideoGameController.cs" />
+     <Compile Include="Assets\Scripts\enemy_scripts\EnemyReactions.cs" />
      <Compile Include="Assets\Shaders\RipplePostProcessor.cs" />
      <None Include="Assets\Prefabs\readme.txt" />
      <None Include="Assets\Shaders\readme.txt" />
