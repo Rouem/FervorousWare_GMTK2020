@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\2D_platformer_scripts\PlatformPhysics.cs" />
      <Compile Include="Assets\Scripts\CablePuzzle.cs" />
      <Compile Include="Assets\Scripts\ControllInputs.cs" />
+     <Compile Include="Assets\Scripts\DistractionsManager.cs" />
      <Compile Include="Assets\Scripts\EnableControll.cs" />
      <Compile Include="Assets\Scripts\VideoGameController.cs" />
      <Compile Include="Assets\Scripts\enemy_scripts\EnemyReactions.cs" />
