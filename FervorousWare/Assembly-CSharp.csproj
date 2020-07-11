@@ -606,6 +606,8 @@
 >>>>>>> 3469c6038d52e72afe908a1530508af00d1e6e22
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\2D_platformer_scripts\Movement_2D.cs" />
+    <Compile Include="Assets\Scripts\2D_platformer_scripts\PlatformPhysics.cs" />
     <Compile Include="Assets\Scripts\VideoGameController.cs" />
     <Compile Include="Assets\Shaders\RipplePostProcessor.cs" />
     <None Include="Assets\Prefabs\readme.txt" />
