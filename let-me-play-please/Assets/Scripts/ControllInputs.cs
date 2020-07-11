@@ -20,6 +20,7 @@ public class ControllInputs : MonoBehaviour
         if(pressNumber == 0){
             Debug.Log("Button '"+gameObject.name+" is work again!");
             EnableButton.Invoke();
+            DistractionsManager.instance.SolveProblem();
         }else{
             Debug.Log("Button '"+gameObject.name+" is pushed. Remain: "+pressNumber);
             pressNumber--;

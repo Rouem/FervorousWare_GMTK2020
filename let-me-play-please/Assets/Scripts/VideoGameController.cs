@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VideoGameController : MonoBehaviour
 {
-    #region Simgleton
+    #region Singleton
         public static VideoGameController instance;
         private void Awake() {
             if(VideoGameController.instance != null)
@@ -127,6 +127,7 @@ public class VideoGameController : MonoBehaviour
     public void ReconectControll(){
         lightState.material = lightOn;
         controllState = true;
+        DistractionsManager.instance.SolveProblem();
     }
 
 }
