@@ -18,8 +18,10 @@ public class ControllInputs : MonoBehaviour
 
     public void PushButton(){
         if(pressNumber == 0){
+            Debug.Log("Button '"+gameObject.name+" is work again!");
             EnableButton.Invoke();
         }else{
+            Debug.Log("Button '"+gameObject.name+" is pushed. Remain: "+pressNumber);
             pressNumber--;
         }
     }
