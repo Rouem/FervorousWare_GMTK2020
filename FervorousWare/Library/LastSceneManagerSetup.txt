@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/ControllTest.unity
+=======
+- path: Assets/Scenes/Scene_MVP.unity
+>>>>>>> 6f18c160a7bd7537aa8f7d4097c91445988c8183
   isLoaded: 1
   isActive: 1
   isSubScene: 0

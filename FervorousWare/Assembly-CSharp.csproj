@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\2D_platformer_scripts\Movement_2D.cs" />
      <Compile Include="Assets\Scripts\2D_platformer_scripts\PlatformPhysics.cs" />
      <Compile Include="Assets\Scripts\ControllInputs.cs" />
@@ -52,6 +53,44 @@
      <None Include="Assets\Shaders\Ripple.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+=======
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.11f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.3.11f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\2D_platformer_scripts\Movement_2D.cs" />
+    <Compile Include="Assets\Scripts\2D_platformer_scripts\PlatformPhysics.cs" />
+    <Compile Include="Assets\Scripts\ControllInputs.cs" />
+    <Compile Include="Assets\Scripts\VideoGameController.cs" />
+    <Compile Include="Assets\Shaders\RipplePostProcessor.cs" />
+    <None Include="Assets\Prefabs\readme.txt" />
+    <None Include="Assets\Shaders\readme.txt" />
+    <None Include="Assets\Scenes\readme.txt" />
+    <None Include="Assets\Images\readme.txt" />
+    <None Include="Assets\Models\radme.txt" />
+    <None Include="Assets\ParticleEffects\readme.txt" />
+    <None Include="Assets\Animators\readme.txt" />
+    <None Include="Assets\Audio\readme.txt" />
+    <None Include="Assets\Shaders\Ripple.shader" />
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:/ProjetosUnity/FervorousWare_GMTK2020/FervorousWare/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/ProjetosUnity/FervorousWare_GMTK2020/FervorousWare/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Enhancer.Editor">
+      <HintPath>C:/ProjetosUnity/FervorousWare_GMTK2020/FervorousWare/Library/ScriptAssemblies/Enhancer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/ProjetosUnity/FervorousWare_GMTK2020/FervorousWare/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> 6f18c160a7bd7537aa8f7d4097c91445988c8183
     </Reference>
     <Reference Include="UnityEngine.AIModule">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
