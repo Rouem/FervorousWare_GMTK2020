@@ -24,7 +24,7 @@ public class Movement_2D : MonoBehaviour
     private void Update()
     {
         walk_direction = Input.GetAxis("Horizontal");
-        is_jumping = (Input.GetAxis("Jump") >= 1) ? true : false;
+        is_jumping = Input.GetAxis("Jump") >= 1;
        
     }
 
