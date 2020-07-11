@@ -10,6 +10,7 @@ public class Movement_2D : MonoBehaviour
 {
     //cached variables
     private PlatformPhysics controller;
+    private InputsAPI inputs;
     //state variables
     private float walk_direction = 0;
     //attributes
@@ -19,12 +20,13 @@ public class Movement_2D : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<PlatformPhysics>();
+        inputs = GetComponent<InputsAPI>();
     }
 
     private void Update()
     {
-        walk_direction = Input.GetAxis("Horizontal");
-        is_jumping = Input.GetAxis("Jump") >= 1;
+        walk_direction = inputs.WalkDirection();
+        is_jumping = inputs.IsJumping();
        
     }
 

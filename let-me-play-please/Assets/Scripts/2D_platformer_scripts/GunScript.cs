@@ -7,6 +7,7 @@ public class GunScript : MonoBehaviour
     //references
     [SerializeField] private GameObject bulletPrefab = null;
     [SerializeField] private Transform firePoint = null;
+    [SerializeField] private InputsAPI inputs;
     //state variables
     private bool is_shooting_forward = false;
     private bool is_shooting_up = false;
@@ -21,8 +22,8 @@ public class GunScript : MonoBehaviour
     void Update()
     {
         //inputs
-        is_shooting_forward = Input.GetAxis("ShootForward")>=1;
-        is_shooting_up = Input.GetAxis("ShootUp")>=1;
+        is_shooting_forward = inputs.IsShootingForward();
+        is_shooting_up = inputs.IsShootingUp();
         //shoot direction
         if(is_shooting_forward && is_shooting_up)
         {
