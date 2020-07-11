@@ -11,6 +11,7 @@ public class BulletBehaviuor : MonoBehaviour
     private Rigidbody2D bulletrb = null;
     //variables
     private float time_to_live = 3f;
+    [SerializeField] private float bullet_damage = 1;
     void Start()
     {
         //propagation
@@ -18,5 +19,12 @@ public class BulletBehaviuor : MonoBehaviour
         bulletrb.velocity = transform.right * bullet_speed;
         //auto destruction
         Destroy(gameObject, time_to_live);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        EnemyReactions enemy = collision.GetComponent<EnemyReactions>();
+        enemy?.TakeDamage(bullet_damage);
+        Destroy(gameObject);
     }
 }
