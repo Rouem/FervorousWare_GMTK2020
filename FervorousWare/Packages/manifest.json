@@ -39,11 +39,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.xeleh.enhancer": {
-      "revision": "HEAD",
-      "hash": "78e062bf5467bb3a4caae6315aaf74352050d116"
-    }
   }
 }
