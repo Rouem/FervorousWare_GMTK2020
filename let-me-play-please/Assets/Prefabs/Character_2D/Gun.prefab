@@ -128,3 +128,4 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4380464761307567, guid: ba777f2d1a3b806468d4aba16aee0464,
     type: 3}
   firePoint: {fileID: 488294245425549688}
+  shoot_direction: {x: 1, y: 0}
