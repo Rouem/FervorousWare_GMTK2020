@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\ControllInputs.cs" />
     <Compile Include="Assets\Scripts\DistractionsManager.cs" />
     <Compile Include="Assets\Scripts\EnableControll.cs" />
+    <Compile Include="Assets\Scripts\GameMannagement\GameLoop.cs" />
     <Compile Include="Assets\Scripts\GameWinLoose\GameWinLoose.cs" />
     <Compile Include="Assets\Scripts\HandsManager.cs" />
     <Compile Include="Assets\Scripts\ShowScreen\ScreenMannager.cs" />

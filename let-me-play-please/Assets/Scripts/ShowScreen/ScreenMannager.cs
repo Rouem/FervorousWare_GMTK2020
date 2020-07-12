@@ -15,6 +15,8 @@ public class ScreenMannager : MonoBehaviour
     private void Start()
     {
         ShowStartScreen();
+        loose_screen?.HideTheScreen();
+        win_screen?.HideTheScreen();
     }
 
     public void ShowStartScreen()

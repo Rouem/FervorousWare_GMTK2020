@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,9 @@ public class CharacterLife : MonoBehaviour
     //references
     [SerializeField] private float life = 4f;
     [SerializeField] private Text lifeText = null;
+
+    //events
+    public Action die_event;
 
     private void Start()
     {
@@ -27,6 +31,7 @@ public class CharacterLife : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Voce morreu :(");
+        die_event();
         gameObject.SetActive(false);
     }
 }
