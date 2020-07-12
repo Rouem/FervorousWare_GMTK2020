@@ -8,7 +8,7 @@ public class CharacterLife : MonoBehaviour
     public void TakeDamage(float damage)
     {
         life -= damage;
-        Debug.Log(life);
+        Debug.Log("VIDA: " + life);
         if (life <= 0)
             GameOver();
     }
