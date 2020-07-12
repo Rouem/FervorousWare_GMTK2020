@@ -24,6 +24,7 @@ public class InputsAPI : MonoBehaviour
     private bool is_shooting_forward_enabled = true;
     private bool is_shooting_up_enabled = true;
 
+    public LayerMask floorLayer;
     AnimationsManager anim;
     private void Start() {
 		anim = GetComponentInChildren<AnimationsManager>();
@@ -43,7 +44,6 @@ public class InputsAPI : MonoBehaviour
                 transform.localScale.y,
                 transform.localScale.z
             ); */
-            anim.SetAction(1);
         }
         
         if(VideoGameController.instance.GetLEFT()){
@@ -56,17 +56,29 @@ public class InputsAPI : MonoBehaviour
         }
 
         if(Mathf.Abs(left_input) > 0f || Mathf.Abs(right_input) > 0f)
-            anim.SetAction(1);
-        else
-            anim.SetAction(0);
-        
-        if(VideoGameController.instance.GetJUMP())
-            is_jumping = Input.GetAxis("Jump")>=1;
+                anim.SetAction(1);
+            else
+                anim.SetAction(0);
 
-        if(is_shooting_forward_enabled)
+        if(Physics2D.Raycast(transform.position,-transform.up,1.7f,floorLayer.value)){
+			anim.SetAction("isJumping",false);
+		}else{
+			anim.SetAction("isJumping",true);
+		}
+            
+            if(Input.GetKeyDown(KeyCode.K))
+                GetComponent<AudioSource>().Play();
+        
+        
+        if(VideoGameController.instance.GetJUMP()){
+            is_jumping = Input.GetAxis("Jump")>=1;
+            
+        }
+
+        if(VideoGameController.instance.GetFIRE())
             is_shooting_forward = Input.GetAxis("ShootForward") >= 1;
         
-        if(is_shooting_up_enabled)
+        if(VideoGameController.instance.GetJUMP())
             is_shooting_up = Input.GetAxis("ShootUp") >= 1;
     }
 
