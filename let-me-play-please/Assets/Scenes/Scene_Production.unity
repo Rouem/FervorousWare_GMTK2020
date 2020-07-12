@@ -3381,7 +3381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &444364452
 Transform:
   m_ObjectHideFlags: 0
@@ -8607,13 +8607,14 @@ GameObject:
   - component: {fileID: 1611883587}
   - component: {fileID: 1611883589}
   - component: {fileID: 1611883588}
+  - component: {fileID: 1611883590}
   m_Layer: 0
   m_Name: StartScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1611883587
 Transform:
   m_ObjectHideFlags: 0
@@ -8690,6 +8691,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1611883590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611883586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db694c77a7d508d4f9298de952376b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1614627339
 GameObject:
   m_ObjectHideFlags: 0
@@ -10608,6 +10621,8 @@ MonoBehaviour:
   screens: {fileID: 829214336}
   character: {fileID: 1731279997}
   try_again: {fileID: 444364455}
+  enter_start: {fileID: 1611883590}
+  game_win: {fileID: 1327935988}
 --- !u!4 &2128157210
 Transform:
   m_ObjectHideFlags: 0

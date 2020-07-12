@@ -39,5 +39,13 @@ public class ScreenMannager : MonoBehaviour
         win_screen?.ShowTheScreen();
         active_screen = win_screen;
     }
+
+    public void HideAll()
+    {
+        active_screen = null;
+        start_screen.HideTheScreen();
+        loose_screen.HideTheScreen();
+        win_screen.HideTheScreen();
+    }
 }
 
