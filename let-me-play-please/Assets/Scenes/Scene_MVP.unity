@@ -7164,7 +7164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
-  maxTime: 60
+  maxTime: 10
   cablePuzzle: {fileID: 590422534}
 --- !u!4 &1293527055
 Transform:

@@ -13,6 +13,7 @@ public class BombBehaviour : MonoBehaviour
     public void ReleaseBomb()
     {
         is_released = true;
+        GetComponent<AudioSource>().Play();
     }
 
     private void FixedUpdate()
