@@ -6674,6 +6674,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   deffect: {fileID: 0}
+  more: {fileID: 3735373188280471248, guid: cbf278e49f4b2d1479b5feff8d43a5b8, type: 3}
 --- !u!64 &1291657103
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7499,6 +7500,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   deffect: {fileID: 0}
+  more: {fileID: 3735373188280471248, guid: cbf278e49f4b2d1479b5feff8d43a5b8, type: 3}
 --- !u!64 &1528031398
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8125,6 +8127,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   deffect: {fileID: 0}
+  more: {fileID: 3735373188280471248, guid: cbf278e49f4b2d1479b5feff8d43a5b8, type: 3}
 --- !u!64 &1675514536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8671,6 +8674,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   deffect: {fileID: 0}
+  more: {fileID: 3735373188280471248, guid: cbf278e49f4b2d1479b5feff8d43a5b8, type: 3}
 --- !u!64 &1860131522
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -358,6 +358,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bomb_velocity: 2.5
   bomb_damage: 3
+  effect: {fileID: 0}
+  floor:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!82 &2737813912151574634
 AudioSource:
   m_ObjectHideFlags: 0

@@ -30,6 +30,7 @@ public class DistractionsManager : MonoBehaviour
     void Start()
     {
         problemSolved = true;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -42,6 +43,7 @@ public class DistractionsManager : MonoBehaviour
             Debug.Log("Distraction: "+sortProblem);
             if(sortProblem.Equals(1) || sortProblem.Equals(3)){
                 VideoGameController.instance.SortDefectButton();
+                Cursor.visible = true;
             }
             if(sortProblem.Equals(2)){
                 cablePuzzle.SetActive(true);

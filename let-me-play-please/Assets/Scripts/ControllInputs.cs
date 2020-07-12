@@ -6,7 +6,7 @@ public class ControllInputs : MonoBehaviour
 {
     public UnityEvent buttonFunction, EnableButton;
     
-    public GameObject deffect;
+    public GameObject deffect, more;
     private void Start() {
         deffect = transform.Find("deffect").gameObject;
     }
@@ -27,9 +27,12 @@ public class ControllInputs : MonoBehaviour
             Debug.Log("Button '"+gameObject.name+" is work again!");
             EnableButton.Invoke();
             DistractionsManager.instance.SolveProblem();
+            Cursor.visible = false;
             deffect.SetActive(false);
         }else{
             Debug.Log("Button '"+gameObject.name+" is pushed. Remain: "+pressNumber);
+            GameObject aux = Instantiate(more,transform.position,Quaternion.identity);
+            Destroy(aux,0.8f);
             pressNumber--;
         }
     }
