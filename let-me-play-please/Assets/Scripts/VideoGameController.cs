@@ -17,8 +17,6 @@ public class VideoGameController : MonoBehaviour
     bool controllState = true;
     public Camera cam;
 
-    public Material lightOn, lightOff;
-    public MeshRenderer lightState;
 
     #region INPUTS
     public bool GetUP(){
@@ -111,6 +109,7 @@ public class VideoGameController : MonoBehaviour
         int numberOfPress = Random.Range(2,9);
         Debug.Log("Button "+buttons[sort].name+" isn't working!");
         buttons[sort].NumberOfPress(numberOfPress);
+        buttons[sort].deffect.SetActive(true);
         activedButton[sort] = false;
         lastSorted = sort;
     }
@@ -120,13 +119,13 @@ public class VideoGameController : MonoBehaviour
     }
 
     public void CrashControll(){
-        lightState.material = lightOff;
         controllState = false;
     }
 
     public void ReconectControll(){
-        lightState.material = lightOn;
         controllState = true;
+        HandsManager.instance.hands.SetActive(true);
+        HandsManager.instance.handsOnCable.SetActive(false);
         DistractionsManager.instance.SolveProblem();
     }
 

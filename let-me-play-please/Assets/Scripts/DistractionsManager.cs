@@ -40,14 +40,17 @@ public class DistractionsManager : MonoBehaviour
         if(count >= maxTime){
             int sortProblem = (int)Random.Range(1f,3f);
             Debug.Log("Distraction: "+sortProblem);
-            if(sortProblem.Equals(1))
+            if(sortProblem.Equals(1)){
                 VideoGameController.instance.SortDefectButton();
+            }
             if(sortProblem.Equals(2)){
                 cablePuzzle.SetActive(true);
                 VideoGameController.instance.CrashControll();
+                HandsManager.instance.hands.SetActive(false);
+                HandsManager.instance.handsOnCable.SetActive(true);
             }
 
-            maxTime = Random.Range(10f,30f);
+            maxTime = Random.Range(05f,20f);
             count = 0;
             problemSolved = false;
         }else
