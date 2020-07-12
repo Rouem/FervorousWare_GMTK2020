@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4991599895485364101}
   - component: {fileID: 4991599895485364098}
   - component: {fileID: 4991599895485364099}
+  - component: {fileID: 4536755458902641519}
   m_Layer: 11
   m_Name: CharacterPlatform
   m_TagString: Untagged
@@ -53,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9baddaba871cd604a86ccbb5b864e462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 200
+  m_JumpForce: 280
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -185,7 +186,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4991599895485364095}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 18bf3441a23df1145a801ed5e7689b4e, type: 2}
   m_IsTrigger: 0
@@ -204,6 +205,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.68, y: 1.51}
   m_EdgeRadius: 0
+--- !u!70 &4536755458902641519
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991599895485364095}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 18bf3441a23df1145a801ed5e7689b4e, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06, y: 0.28}
+  m_Size: {x: 0.77, y: 1.69}
+  m_Direction: 0
 --- !u!1 &4991599895725988714
 GameObject:
   m_ObjectHideFlags: 0
