@@ -10,7 +10,7 @@ public class EnemyBehaviour : MonoBehaviour
     private Rigidbody2D controller;
 
     //properties
-    private float shoot_bpm = 100;
+    [SerializeField] private float shoot_bpm = 100;
     private bool is_shooting = false;
     private bool is_walking = false;
 

@@ -2052,7 +2052,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 1.99}
+  m_Size: {x: 4.86, y: 1.99}
   m_EdgeRadius: 0
 --- !u!4 &1539943796
 Transform:
@@ -3028,6 +3028,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4380464761307567, guid: af53e0647e5671b4c8a0079bb253b6de,
     type: 3}
   spawnBulletPoint: {fileID: 172739899}
+  shoot_bpm: 40
 --- !u!114 &6718169628286193656
 MonoBehaviour:
   m_ObjectHideFlags: 0
