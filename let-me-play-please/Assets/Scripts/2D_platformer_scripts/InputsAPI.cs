@@ -24,22 +24,45 @@ public class InputsAPI : MonoBehaviour
     private bool is_shooting_forward_enabled = true;
     private bool is_shooting_up_enabled = true;
 
-
-    
+    AnimationsManager anim;
+    private void Start() {
+		anim = GetComponentInChildren<AnimationsManager>();
+	}
 
     private void Update()
     {
+        
+
         if(!VideoGameController.instance.GetControllState())return;
         
-        if(VideoGameController.instance.GetRIGHT())
-            right_input = Input.GetAxis("Horizontal_right");
         
-        if(VideoGameController.instance.GetLEFT())
+        if(VideoGameController.instance.GetRIGHT()){
+            right_input = Input.GetAxis("Horizontal_right");
+            /* transform.localScale.Set(
+                transform.localScale.x,
+                transform.localScale.y,
+                transform.localScale.z
+            ); */
+            anim.SetAction(1);
+        }
+        
+        if(VideoGameController.instance.GetLEFT()){
             left_input = Input.GetAxis("Horizontal_left");
+            /* transform.localScale.Set(
+                transform.localScale.x*-1f,
+                transform.localScale.y,
+                transform.localScale.z
+            ); */
+        }
+
+        if(Mathf.Abs(left_input) > 0f || Mathf.Abs(right_input) > 0f)
+            anim.SetAction(1);
+        else
+            anim.SetAction(0);
         
         if(VideoGameController.instance.GetJUMP())
             is_jumping = Input.GetAxis("Jump")>=1;
-        
+
         if(is_shooting_forward_enabled)
             is_shooting_forward = Input.GetAxis("ShootForward") >= 1;
         

@@ -47,7 +47,7 @@ public class DistractionsManager : MonoBehaviour
                 VideoGameController.instance.CrashControll();
             }
 
-            maxTime = Random.Range(02f,10f);
+            maxTime = Random.Range(10f,30f);
             count = 0;
             problemSolved = false;
         }else

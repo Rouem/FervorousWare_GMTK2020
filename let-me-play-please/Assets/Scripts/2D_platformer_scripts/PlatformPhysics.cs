@@ -62,9 +62,14 @@ public class PlatformPhysics : MonoBehaviour
 		}
 	}
 
-
+	AnimationsManager anim;
+	private void Start() {
+		anim = GetComponentInChildren<AnimationsManager>();
+	}
 	public void Move(float move, bool crouch, bool jump)
 	{
+		
+		anim.SetAction("isCrounched",crouch);
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
 		{
@@ -133,6 +138,7 @@ public class PlatformPhysics : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
+
 	}
 
 
