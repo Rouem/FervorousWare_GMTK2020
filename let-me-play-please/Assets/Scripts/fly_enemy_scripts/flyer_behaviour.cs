@@ -11,7 +11,7 @@ public class flyer_behaviour : MonoBehaviour
     {
         is_walking = true;
         GetComponent<AudioSource>().Play();
-        Destroy(gameObject, 3);
+        Destroy(gameObject, 6);
     }
 
     private void FixedUpdate()
