@@ -31,6 +31,10 @@ public class BulletBehaviuor : MonoBehaviour
         CharacterLife mainChar = collision.GetComponent<CharacterLife>();
         mainChar?.TakeDamage(bullet_damage);
 
+        DestroyBullet();
+    }
+    public void DestroyBullet()
+    {
         Destroy(gameObject);
     }
 }
