@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\EnableControll.cs" />
     <Compile Include="Assets\Scripts\GameWinLoose\GameWinLoose.cs" />
     <Compile Include="Assets\Scripts\HandsManager.cs" />
+    <Compile Include="Assets\Scripts\ShowScreen\ScreenMannager.cs" />
+    <Compile Include="Assets\Scripts\ShowScreen\ShowScreen.cs" />
     <Compile Include="Assets\Scripts\VideoGameController.cs" />
     <Compile Include="Assets\Scripts\bullet_destroyer\DestroyBulletTrigger.cs" />
     <Compile Include="Assets\Scripts\floor_enemy_scripts\BombBehaviour.cs" />
