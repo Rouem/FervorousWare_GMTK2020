@@ -28,7 +28,7 @@ public class CablePuzzle : MonoBehaviour
 
         if(Vector3.Distance(currentPoint.position,reconnectPoint.position) <= 0.3f){
             Debug.Log("Reconnected!");
-            if(count >= 1.2f){
+            if(count >= 0.9f){
                 count = 0;
                 VideoGameController.instance.ReconectControll();
                 NewReconnectionPoint();
