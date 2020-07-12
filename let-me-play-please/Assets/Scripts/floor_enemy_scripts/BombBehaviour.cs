@@ -12,8 +12,9 @@ public class BombBehaviour : MonoBehaviour
     private bool is_released = false;
     public void ReleaseBomb()
     {
-        is_released = true;
+        if(!is_released)
         GetComponent<AudioSource>().Play();
+        is_released = true;
     }
 
     private void FixedUpdate()
