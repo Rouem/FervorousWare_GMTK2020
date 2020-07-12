@@ -83,7 +83,8 @@
     <Compile Include="Assets\Scripts\ShowScreen\ScreensBehaviours\PressEnterToTryAgain.cs" />
     <Compile Include="Assets\Scripts\ShowScreen\ShowScreen.cs" />
     <Compile Include="Assets\Scripts\VideoGameController.cs" />
-    <Compile Include="Assets\Scripts\bullet_destroyer\DestroyBulletTrigger.cs" />
+    <Compile Include="Assets\Scripts\destroyVolumes\DestroyBulletTrigger.cs" />
+    <Compile Include="Assets\Scripts\destroyVolumes\DestroyEnemy.cs" />
     <Compile Include="Assets\Scripts\floor_enemy_scripts\BombBehaviour.cs" />
     <Compile Include="Assets\Scripts\floor_enemy_scripts\BombReleaser.cs" />
     <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyAgro.cs" />
