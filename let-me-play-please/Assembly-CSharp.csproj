@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyAgro.cs" />
     <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyReactions.cs" />
+    <Compile Include="Assets\Scripts\floor_enemy_scripts\SimpleEnemy.cs" />
     <Compile Include="Assets\Scripts\fly_enemy_scripts\flyer_agro.cs" />
     <Compile Include="Assets\Scripts\fly_enemy_scripts\flyer_behaviour.cs" />
     <Compile Include="Assets\Shaders\RipplePostProcessor.cs" />
