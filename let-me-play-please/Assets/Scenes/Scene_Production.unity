@@ -3374,13 +3374,14 @@ GameObject:
   - component: {fileID: 444364452}
   - component: {fileID: 444364454}
   - component: {fileID: 444364453}
+  - component: {fileID: 444364455}
   m_Layer: 0
   m_Name: LooseScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &444364452
 Transform:
   m_ObjectHideFlags: 0
@@ -3457,6 +3458,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &444364455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444364451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9f8582d1927d14f9c0821dc65c4cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &454146121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10594,6 +10607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screens: {fileID: 829214336}
   character: {fileID: 1731279997}
+  try_again: {fileID: 444364455}
 --- !u!4 &2128157210
 Transform:
   m_ObjectHideFlags: 0
