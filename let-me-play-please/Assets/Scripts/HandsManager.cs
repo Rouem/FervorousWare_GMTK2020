@@ -11,7 +11,7 @@ public class HandsManager : MonoBehaviour
             Destroy(gameObject);
         instance = this;
     }
-    public Sprite up,down,left,right,fire,jump;
+    public Sprite left,right,fire,jump;
 
     public SpriteRenderer leftHand, rightHand;
     public GameObject hands, handsOnCable;
@@ -33,12 +33,6 @@ public class HandsManager : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.D))
             leftHand.sprite = right;
-        
-        if(Input.GetKeyDown(KeyCode.W))
-            leftHand.sprite = up;
-        
-        if(Input.GetKeyDown(KeyCode.S))
-            leftHand.sprite = down;
         
         if(Input.GetKeyDown(KeyCode.J))
             rightHand.sprite = fire;

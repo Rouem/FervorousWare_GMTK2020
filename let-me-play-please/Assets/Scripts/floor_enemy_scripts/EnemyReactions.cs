@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyReactions : MonoBehaviour
 {
     private float life = 10;
+    public GameObject effect;
 
     public void TakeDamage(float damage)
     {
@@ -16,6 +17,7 @@ public class EnemyReactions : MonoBehaviour
     }
     private void Die()
     {
+        Instantiate(effect,transform.position,Quaternion.identity);
         Destroy(gameObject);
     }
 }
