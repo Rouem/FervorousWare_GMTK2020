@@ -1,14 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterLife : MonoBehaviour
 {
+    //references
     [SerializeField] private float life = 4f;
+    [SerializeField] private Text lifeText = null;
+
+    private void Start()
+    {
+        if (lifeText)
+            lifeText.text = life.ToString();
+    }
+
     public void TakeDamage(float damage)
     {
         life -= damage;
-        Debug.Log("VIDA: " + life);
+        if (lifeText)
+            lifeText.text = life.ToString();
         if (life <= 0)
             GameOver();
     }
