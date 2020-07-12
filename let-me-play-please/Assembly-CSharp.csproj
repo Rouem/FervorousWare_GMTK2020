@@ -77,9 +77,13 @@
     <Compile Include="Assets\Scripts\EnableControll.cs" />
     <Compile Include="Assets\Scripts\GameWinLoose\GameWinLoose.cs" />
     <Compile Include="Assets\Scripts\VideoGameController.cs" />
-    <Compile Include="Assets\Scripts\enemy_scripts\EnemyAgro.cs" />
-    <Compile Include="Assets\Scripts\enemy_scripts\EnemyBehaviour.cs" />
-    <Compile Include="Assets\Scripts\enemy_scripts\EnemyReactions.cs" />
+    <Compile Include="Assets\Scripts\floor_enemy_scripts\BombBehaviour.cs" />
+    <Compile Include="Assets\Scripts\floor_enemy_scripts\BombReleaser.cs" />
+    <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyAgro.cs" />
+    <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\floor_enemy_scripts\EnemyReactions.cs" />
+    <Compile Include="Assets\Scripts\fly_enemy_scripts\flyer_agro.cs" />
+    <Compile Include="Assets\Scripts\fly_enemy_scripts\flyer_behaviour.cs" />
     <Compile Include="Assets\Shaders\RipplePostProcessor.cs" />
     <None Include="Assets\Prefabs\readme.txt" />
     <None Include="Assets\Shaders\readme.txt" />
