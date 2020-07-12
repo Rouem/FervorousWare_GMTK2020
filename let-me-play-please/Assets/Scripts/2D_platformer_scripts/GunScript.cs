@@ -23,18 +23,18 @@ public class GunScript : MonoBehaviour
     {
         //inputs
         is_shooting_forward = inputs.IsShootingForward();
-        is_shooting_up = inputs.IsShootingUp();
+        //is_shooting_up = inputs.IsShootingUp();
         //shoot direction
-        if(is_shooting_forward && is_shooting_up)
-        {
-            transform.localRotation = Quaternion.Euler(0f, 0f, 45f);
-        }else if (is_shooting_forward)
-        {
-            transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-        }else if (is_shooting_up)
-        {
-            transform.localRotation = Quaternion.Euler(0f, 0f, 90f);
-        }
+        //if(is_shooting_forward && is_shooting_up)
+        //{
+        //    transform.localRotation = Quaternion.Euler(0f, 0f, 45f);
+        //}else if (is_shooting_forward)
+        //{
+        //    transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+        //}else if (is_shooting_up)
+        //{
+        //    transform.localRotation = Quaternion.Euler(0f, 0f, 90f);
+        //}
     }
 
     private void SpawnBulletRate()

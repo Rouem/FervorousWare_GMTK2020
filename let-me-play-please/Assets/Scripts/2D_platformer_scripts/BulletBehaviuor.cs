@@ -23,8 +23,14 @@ public class BulletBehaviuor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //green bullet case
         EnemyReactions enemy = collision.GetComponent<EnemyReactions>();
         enemy?.TakeDamage(bullet_damage);
+
+        //purple bullet case
+        CharacterLife mainChar = collision.GetComponent<CharacterLife>();
+        mainChar?.TakeDamage(bullet_damage);
+
         Destroy(gameObject);
     }
 }
