@@ -24,8 +24,8 @@ TagManager:
   - Gun/EnemyBullet
   - DestroyerTrigger
   - BombLayer
-  - 
-  - 
+  - EnemyDestroyer
+  - FlyDestroy
   - 
   - 
   - 

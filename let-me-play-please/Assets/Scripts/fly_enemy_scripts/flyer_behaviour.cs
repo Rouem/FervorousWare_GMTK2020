@@ -10,6 +10,8 @@ public class flyer_behaviour : MonoBehaviour
     public void BeAgressive()
     {
         is_walking = true;
+        GetComponent<AudioSource>().Play();
+        Destroy(gameObject, 3);
     }
 
     private void FixedUpdate()

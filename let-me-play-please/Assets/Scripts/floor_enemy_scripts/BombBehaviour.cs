@@ -33,6 +33,6 @@ public class BombBehaviour : MonoBehaviour
     {
         CharacterLife mainChar = collision.GetComponent<CharacterLife>();
         mainChar?.TakeDamage(bomb_damage);
-        Destroy(gameObject);
+        Destroy(GetComponent<SpriteRenderer>());
     }
 }
