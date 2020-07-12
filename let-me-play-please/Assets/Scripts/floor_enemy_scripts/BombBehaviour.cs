@@ -27,10 +27,15 @@ public class BombBehaviour : MonoBehaviour
             transform.position = new_position;
         }
     }
-
-    //explosion effect
+    public GameObject effect;
+    public LayerMask floor;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.layer.Equals(floor.value)){
+            Instantiate(effect,transform.position,Quaternion.identity);
+            Destroy(gameObject);
+        }
+        
         CharacterLife mainChar = collision.GetComponent<CharacterLife>();
         mainChar?.TakeDamage(bomb_damage);
         Destroy(GetComponent<SpriteRenderer>());

@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 4
   lifeText: {fileID: 0}
+  effect: {fileID: 1144269634115294563, guid: e90d948c0fab5ba43932d43512d44861, type: 3}
 --- !u!212 &4991599895485364101
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -19,53 +19,37 @@ public class VideoGameController : MonoBehaviour
 
 
     #region INPUTS
-    public bool GetUP(){
+    public bool GetLEFT(){
         return activedButton[0];
     }
     
-    public bool GetDOWN(){
+    public bool GetRIGHT(){
         return activedButton[1];
     }
 
-    public bool GetLEFT(){
+    public bool GetFIRE(){
         return activedButton[2];
     }
 
-    public bool GetRIGHT(){
+    public bool GetJUMP(){
         return activedButton[3];
     }
 
-    public bool GetFIRE(){
-        return activedButton[4];
-    }
-
-    public bool GetJUMP(){
-        return activedButton[5];
-    }
-
     
-    public void SetUP(bool state){
+    public void SetLEFT(bool state){
         activedButton[0] = state;
     }
     
-    public void SetDOWN(bool state){
+    public void SetRIGHT(bool state){
         activedButton[1] = state;
     }
     
-    public void SetLEFT(bool state){
+    public void SetFIRE(bool state){
         activedButton[2] = state;
     }
 
-    public void SetRIGHT(bool state){
-        activedButton[3] = state;
-    }
-
-    public void SetFIRE(bool state){
-        activedButton[4] = state;
-    }
-
     public void SetJUMP(bool state){
-        activedButton[5] = state;
+        activedButton[3] = state;
     }
     #endregion
 

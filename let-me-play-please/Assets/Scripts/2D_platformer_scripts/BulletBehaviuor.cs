@@ -11,6 +11,7 @@ public class BulletBehaviuor : MonoBehaviour
     private Rigidbody2D bulletrb = null;
     //variables
     private float time_to_live = 3f;
+    
     [SerializeField] private float bullet_damage = 1;
     void Start()
     {
@@ -20,9 +21,11 @@ public class BulletBehaviuor : MonoBehaviour
         //auto destruction
         Destroy(gameObject, time_to_live);
     }
-
+    public LayerMask floor;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.layer.Equals(floor.value))
+        Destroy(gameObject);
         //green bullet case
         EnemyReactions enemy = collision.GetComponent<EnemyReactions>();
         enemy?.TakeDamage(bullet_damage);

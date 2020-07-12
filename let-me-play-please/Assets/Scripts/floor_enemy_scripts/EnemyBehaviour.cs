@@ -30,6 +30,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void BeAgressive()
     {
+        if(transform.Equals(null) || gameObject.Equals(null)) return;
         transform.Rotate(0f, 180f, 0f);//look to player
         is_shooting = true;
         is_walking = true;

@@ -12,6 +12,7 @@ public class CharacterLife : MonoBehaviour
 
     //events
     public Action die_event;
+    public GameObject effect;
 
     private void Start()
     {
@@ -30,6 +31,10 @@ public class CharacterLife : MonoBehaviour
 
     private void GameOver()
     {
+        if(!effect.Equals(null)){
+            Instantiate(effect,transform.position,Quaternion.identity);
+            effect = null;
+        }
         Debug.Log("Voce morreu :(");
         die_event();
         gameObject.SetActive(false);

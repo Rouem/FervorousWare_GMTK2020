@@ -146,6 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_speed: 4
   bullet_damage: 1
+  floor:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!82 &2240546396018408740
 AudioSource:
   m_ObjectHideFlags: 0

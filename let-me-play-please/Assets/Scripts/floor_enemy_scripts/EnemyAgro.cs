@@ -11,8 +11,11 @@ public class EnemyAgro : MonoBehaviour
     //when player enters the agro area
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(enemy.gameObject.Equals(null))
+            return;
         if (!is_agressive)
         {
+            
             enemy.BeAgressive();
             is_agressive = true;
         }

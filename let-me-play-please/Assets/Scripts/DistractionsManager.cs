@@ -38,9 +38,9 @@ public class DistractionsManager : MonoBehaviour
         if(!problemSolved) return;
 
         if(count >= maxTime){
-            int sortProblem = (int)Random.Range(1f,3f);
+            int sortProblem = (int)Random.Range(1f,4f);
             Debug.Log("Distraction: "+sortProblem);
-            if(sortProblem.Equals(1)){
+            if(sortProblem.Equals(1) || sortProblem.Equals(3)){
                 VideoGameController.instance.SortDefectButton();
             }
             if(sortProblem.Equals(2)){
